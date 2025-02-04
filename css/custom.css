@@ -1,0 +1,33 @@
+.top_bar_left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons i {
+    font-size: 30px; /* Icon size */
+    color: #fff; /* Default color */
+    opacity: 0.7; /* Default opacity */
+    transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for opacity and color */
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons i:hover {
+    color: #ff4500; /* Hover color */
+    opacity: 1; /* Full opacity when hovered */
+}
+
+/* Hide Social Icons in Mobile View */
+@media (max-width: 768px) {
+    .social-icons {
+        display: none;
+    }
+}
